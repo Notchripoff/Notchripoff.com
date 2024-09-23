@@ -71,20 +71,13 @@
 <body>
     <h1>Notchripoff</h1>
 
-    <a href="#" class="button" onclick="alert('Just me')">The Crew</a>
+    <a href="#" onclick="alert('Just me')">The Crew</a>
     <a href="https://notchripoff.itch.io/a-friendly-stroll" target="_blank" class="button">The Games</a>
 
     <a href="https://notchripoff.itch.io/" target="_blank" class="button">Itch.io Page</a>
 
-    <a href="#" class="donate" onclick="alert('No thx')">Donate</a>
+    <a href="#" onclick="alert('No thx')">Donate</a>
 
-    <script>
-        // Add event listeners to buttons
-        document.querySelectorAll('.button, .donate').forEach(button => {
-            button.addEventListener('click', function(event) {
-                event.preventDefault(); // Prevent default link behavior
-            });
-        });
-    </script>
+    <!-- No script tag is needed, as the links will work as expected -->
 </body>
 </html>
