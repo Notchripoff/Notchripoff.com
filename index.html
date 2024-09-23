@@ -17,22 +17,23 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            text-transform: uppercase; 
+            text-transform: uppercase; /* Apply uppercase to all text */
         }
 
         h1 {
-            font-size: 2em; 
+            font-size: 2em; /* Use relative font sizes */
             border: 4px solid white;
-            padding: 1em 2em;
+            padding: 1em 2em; /* Use em for consistent spacing */
             text-align: center;
             margin-bottom: 2em;
             position: relative;
             display: inline-block;
         }
 
-        .button, .social-icons a, .donate {
+        /* Common styles for buttons and links */
+        .button, .donate {
             border: 4px solid white;
-            padding: 0.8em 1.5em; 
+            padding: 0.8em 1.5em; /* Use em for consistent spacing */
             margin: 1em 0;
             text-align: center;
             font-size: 1em;
@@ -40,12 +41,12 @@
             text-decoration: none;
             position: relative;
             display: inline-block;
-            transition: background-color 0.3s ease; 
+            transition: background-color 0.3s ease; /* Add smooth transition */
         }
 
+        /* Apply shadow effect to all elements */
         h1:after, 
         .button:after, 
-        .social-icons a:after, 
         .donate:after {
             content: "";
             position: absolute;
@@ -57,22 +58,11 @@
             z-index: -1;
         }
 
+        /* Hover effect for buttons and links */
         .button:hover, 
-        .social-icons a:hover, 
         .donate:hover {
             background-color: white;
             color: black;
-        }
-
-        .social-icons {
-            margin-top: 2em;
-            display: flex; 
-            justify-content: center; 
-        }
-
-        .social-icons a {
-            margin: 0 0.5em;
-            font-size: 1.5em;
         }
 
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -81,25 +71,12 @@
 <body>
     <h1>Notchripoff</h1>
 
-    <a href="#" class="button" onclick="showCrew()">The Crew</a>
-    <a href="https://notchripoff.itch.io/a-friendly-stroll" class="button">The Games</a>
-    <a href="#" class="donate" onclick="showDonateMessage()">Donate</a>
+    <a href="#" class="button">The Crew</a>
+    <a href="#" class="button">The Games</a>
 
-    <div class="social-icons">
-        <a href="#"><i class="fab fa-steam"></i></a>
-        <a href="#"><i class="fab fa-tumblr"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
+    <a href="https://notchripoff.itch.io/" target="_blank" class="button">Itch.io Page</a>
 
-    <script>
-        function showCrew() {
-            alert("Just me!");
-        }
-
-        function showDonateMessage() {
-            alert("No thanks!"); 
-        }
-    </script>
+    <a href="#" class="donate">Donate</a>
 </body>
 </html>
 
