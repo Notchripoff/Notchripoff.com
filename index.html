@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notchripoff</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-transform: uppercase; 
+        }
+
+        h1 {
+            font-size: 2em; 
+            border: 4px solid white;
+            padding: 1em 2em;
+            text-align: center;
+            margin-bottom: 2em;
+            position: relative;
+            display: inline-block;
+        }
+
+        .button, .social-icons a, .donate {
+            border: 4px solid white;
+            padding: 0.8em 1.5em; 
+            margin: 1em 0;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            transition: background-color 0.3s ease; 
+        }
+
+        h1:after, 
+        .button:after, 
+        .social-icons a:after, 
+        .donate:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            width: 100%;
+            height: 100%;
+            background-color: grey;
+            z-index: -1;
+        }
+
+        .button:hover, 
+        .social-icons a:hover, 
+        .donate:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .social-icons {
+            margin-top: 2em;
+            display: flex; 
+            justify-content: center; 
+        }
+
+        .social-icons a {
+            margin: 0 0.5em;
+            font-size: 1.5em;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+</head>
+<body>
+    <h1>Notchripoff</h1>
+
+    <a href="#" class="button" onclick="showCrew()">The Crew</a>
+    <a href="https://notchripoff.itch.io/a-friendly-stroll" class="button">The Games</a>
+    <a href="#" class="donate" onclick="showDonateMessage()">Donate</a>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-steam"></i></a>
+        <a href="#"><i class="fab fa-tumblr"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <script>
+        function showCrew() {
+            alert("Just me!");
+        }
+
+        function showDonateMessage() {
+            alert("No thanks!"); 
+        }
+    </script>
+</body>
+</html>
+
